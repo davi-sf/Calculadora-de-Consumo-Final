@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Consumo Final</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="icon-neo.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <i class="gg-calculator"></i>
+        <div class="titulo">Consumo Final</div>
+        <form id="calcMed" onsubmit="calculateMed(); return false;">
+            <label for="mediaAnual">Insira a média anual:</label>
+            <input type="number" id="mediaAnual" required><br><br>
+
+            <label for="ultimoDiaLeitura">Dia da última leitura:</label>
+            <input type="date" id="ultimoDiaLeitura" required><br><br>
+
+            <label for="dataAtual">Data atual:</label>
+            <input type="date" id="dataAtual" required><br><br>
+
+            <label for="constanteMedidor">Constante do medidor:</label>
+            <input type="number" id="constanteMedidor" required><br><br>
+
+            <label for="ultimaLeitura">Insira a última leitura:</label>
+            <input type="number" id="ultimaLeitura" required><br><br>
+            <div class="button-container">
+                <button type="submit">Calcular</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

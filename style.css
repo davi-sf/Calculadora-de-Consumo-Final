@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #241f1f;
+    height: 100vh;
+}
+
+.container .titulo {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+    max-width: 500px;
+    width: 90%; /* Mudado para porcentagem para ser responsivo */
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin: 20px auto;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.gg-calculator {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 18px;
+    height: 22px;
+    border: 2px solid;
+    border-radius: 2px;
+}
+
+.gg-calculator::after,
+.gg-calculator::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    top: 2px;
+    left: 2px;
+}
+
+.gg-calculator::after {
+    width: 2px;
+    top: 6px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #353935;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container .titulo {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .button-container button {
+        padding: 8px 16px;
+    }
+}

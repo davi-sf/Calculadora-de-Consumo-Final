@@ -4,14 +4,11 @@ Este projeto consiste em uma aplicação web desenvolvida para calcular as fatur
 
 
 HTML5:
-
-    Para estruturação do conteúdo da página.
+Para estruturação do conteúdo da página.
 
 CSS3:
-
-    Para estilização e design responsivo.
+Para estilização e design responsivo.
 
 JavaScript:
-
-    Para a lógica de cálculo e interatividade da aplicação.
+Para a lógica de cálculo e interatividade da aplicação.
 
